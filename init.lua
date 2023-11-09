@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin-mocha",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -38,6 +38,7 @@ return {
         ignore_filetypes = { -- disable format on save for specified filetypes
           -- "python",
         },
+        timeout_ms = 30000, -- timeout for formatting
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         -- "sumneko_lua",
